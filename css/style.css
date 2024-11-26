@@ -240,14 +240,18 @@ ul {
 .tradition-text {
   margin-bottom: 16px;
 }
+.section-tradition-img {
+  border-radius: 50% 50% 0 0;
+}
 
 /* --------cookers chef section */
 
 .chef-title {
   margin-bottom: 80px;
-  max-width: 550px;
+  /* max-width: 550px; */
   /* text-align: center; */
   margin: 0 auto 80px;
+  position: relative;
 }
 
 .chef-title::after,
@@ -257,12 +261,22 @@ ul {
   border: 2px solid var(--brand-color-dark);
   content: "";
 }
+.chef-title::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.chef-title::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 .chef-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
+
   row-gap: 100px;
 }
 .chef-item {
@@ -384,7 +398,7 @@ ul {
 
 .copyright {
   font-size: 14px;
-  color: var(--primery-light);
+  color: var(--secondary-backgrd-color);
 }
 
 /* ----------footer----------- */
@@ -395,6 +409,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .footer-flex-container {
@@ -425,3 +440,25 @@ ul {
 .privacy-policy {
   /* flex-basis: 50%; */
 }
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+}
+.footer::before {
+  background-image: url(../img/footer-image2.png);
+  width: 180px;
+  height: 120px;
+  bottom: 0;
+}
+.footer::after {
+  background-image: url(../img/footer-image1.png);
+  width: 320px;
+  height: 190px;
+  right: 120px;
+  bottom: 0;
+}
+
+/* -------------- Modal window ------ */

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <div class="header-container">
         <nav class="header-nav">
@@ -31,7 +31,7 @@
           </ul>
         </nav>
         <!-- button -->
-        <button type="button" class="button-call">Замовити дзвінок</button>
+        <button type="button" class="button-call modal-btn-open">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -163,7 +163,7 @@
               </article>
             </li>
           </ul>
-          <button class="slider-button" type="button">
+          <button class="slider-button next" type="button">
             <svg class="slider-arrow" width="28px" height="28px">
               <use href="./img/icons.svg#icon-arrow1"> </use>
             </svg>
@@ -295,15 +295,16 @@
     </div>
   </footer>
 
-  <div class="back-drop">
+  <div class="overlay is-hidden">
 
     <div class="modal-window">
 
+      <button class="modal-btn-close" type="button">X</button>
     </div>
 
-
-
   </div>
+
+  <script src="./js/modal2.js"></script>
 
 </body>
 

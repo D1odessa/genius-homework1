@@ -9,7 +9,7 @@ modalBtnOpen.addEventListener("click", toggleModal);
 modalBtnClose.addEventListener("click", toggleModal);
 
 document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modalwindow.classList.contains("hidden")) {
+  if (e.key === "Escape" && !modalwindow.classList.contains("is-hidden")) {
     overlay.classList.add("is-hidden");
   }
 });

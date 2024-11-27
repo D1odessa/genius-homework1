@@ -518,6 +518,8 @@ ul {
   background-color: var(--primery-light);
   border-radius: 32px;
   position: relative;
+
+  padding: 128px;
 }
 .overlay.is-hidden {
   /* display: none; */

@@ -532,7 +532,7 @@ ul {
   top: 32px;
   background-color: var(--primery-light);
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   text-align: center;
 }

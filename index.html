@@ -38,10 +38,11 @@
 
   <main>
 
+    <!-- ------------------------ -->
     <section class="main-title">
       <h1><span class="accent">Сучасна</span> пекарня</h1>
     </section>
-
+    <!-- -------------------------- -->
     <section class="advantages">
       <div class="container">
 
@@ -54,11 +55,12 @@
 
       </div>
     </section>
-
+    <!-- -------------- -->
     <section class="page-section" id="tradition-section">
       <div class="container">
 
-        <div class="container-tradition">
+        <div class="flex-container-tradition">
+
           <div>
             <h2 class="section-title trad-title">Новий формат традицій</h2>
             <p class="tradition-text">
@@ -77,11 +79,13 @@
       </div>
     </section>
 
+    <!-- --------------------------------- -->
     <section class="page-section" id="cookers-section">
       <div class="container">
 
         <h2 class="section-title chef-title centered">Наші найкращі <br> <span class="accent">шеф-кухарі</span></h2>
         <ul class="chef-list">
+
           <li class="chef-item">
             <article class="chef-card">
               <img class="chef-photo" src="./img/chef-nastya.jpg" alt="chef Nastya photo">
@@ -94,6 +98,7 @@
               </div>
             </article>
           </li>
+
           <li class="chef-item">
             <article class="chef-card">
               <img class="chef-photo" src="./img/chef-vlad.jpg" alt="chef Vlad photo ">
@@ -116,6 +121,7 @@
       </div>
     </section>
 
+    <!-- --------------------------------- -->
     <section class="page-section" id="formats-section">
       <div class="container">
 
@@ -128,7 +134,9 @@
               <use href="./img/icons.svg#icon-arrow1"> </use>
             </svg>
           </button>
+
           <ul class="container-formats-list">
+
             <li class="formats-list">
               <article class="formats-item">
                 <h3 class="formats-item-title" lang="en">Walrus</h3>
@@ -140,6 +148,7 @@
                 </div>
               </article>
             </li>
+
             <li class="formats-list">
               <article class="formats-item">
                 <h3 class="format-title">Horseshoe</h3>
@@ -151,6 +160,7 @@
                 </div>
               </article>
             </li>
+
             <li class="formats-list">
               <article class="formats-item">
                 <h3 class="format-title">Handlebar</h3>
@@ -163,6 +173,7 @@
               </article>
             </li>
           </ul>
+
           <button class="slider-button next" type="button">
             <svg class="slider-arrow" width="28px" height="28px">
               <use href="./img/icons.svg#icon-arrow1"> </use>
@@ -174,16 +185,45 @@
       </div>
     </section>
 
+    <!-- ------------------------------------ -->
     <section class="page-section" id="contacts-section">
       <div class="container">
 
         <div class="flex-container2">
 
-          <div class="call-back-form">
+          <div class="user-callback-form">
+
             <h2 class="section-title contacts-title">Приєднуйся до мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <button type="button" class="button-call">Замовити дзвінок</button>
-            <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+
+            <form name="callback-form" autocomplete="on" novalidate>
+
+              <div class="form-field">
+
+                <input class="input-field" type="text" name="user-name" id="user-name" placeholder="Ім'я" />
+                <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+              </div>
+
+              <div class="form-field">
+
+                <input class="input-field" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" />
+                <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+              </div>
+
+              <div class="form-field">
+
+                <input class="input-field" type="email" name="user-email" id="user-emale" placeholder="Email" />
+                <label class="form-label visually-hidden" for="user-email">Єлектронна пошта</label>
+              </div>
+
+              <button class="form-button button-call" type="submit">Замовити дзвінок</button>
+
+              <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
+                  конфіденційності</a></p>
+
+            </form>
+
+
           </div>
 
           <iframe class="contact-map"
@@ -197,7 +237,7 @@
     </section>
   </main>
 
-  <!-- Test Table -->
+  <!---------------Test Table ------------------->
   <!-- Table -->
   <!-- <table>
     <caption>hhh</caption>
@@ -295,22 +335,48 @@
     </div>
   </footer>
 
+  <!-- Modal callback window-->
+
   <div class="overlay is-hidden">
 
     <div class="modal-window">
 
       <button class="modal-btn-close" type="button">X</button>
 
-      <form name="contact-form" autocomplete="on" novalidate>
+      <form name="modal-callback-form" autocomplete="on" novalidate>
 
         <h2>Замовити дзвінок</h2>
-        <p>hjgjhgjhghjgjhghjgjh jgjgjgjg</p>
-        <input type="text" />
+        <p>Залишіть заявку та наш спеціаліст звʼяжеться з Вами!</p>
+
+        <div class="form-field">
+
+          <input class="input-field" type="text" name="user-name" id="user-name" placeholder="Ім'я" />
+          <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+        </div>
+
+        <div class="form-field">
+
+          <input class="input-field" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" />
+          <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+        </div>
+
+        <div class="form-field">
+
+          <input class="input-field" type="email" name="user-email" id="user-emale" placeholder="Email" />
+          <label class="form-label visually-hidden" for="user-email">Єлектронна пошта</label>
+        </div>
+
+        <button class="form-button button-call" type="submit">Замовити дзвінок</button>
+
+        <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
+            конфіденційності</a></p>
 
       </form>
     </div>
 
   </div>
+  <!--------------------------------------------------------->
+
 
   <script src="./js/modal2.js"></script>
 

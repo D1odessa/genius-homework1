@@ -1,0 +1,16 @@
+.advantages {
+  background-color: var(--brand-color);
+}
+
+.advantages-list {
+  /* background-color: var(--brand-color); */
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+.advantages-item {
+  color: var(--primery-light);
+  font-weight: 300;
+  font-size: 20px;
+  padding: 16px 0;
+}

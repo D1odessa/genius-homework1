@@ -1,0 +1,32 @@
+dialog,
+dialog::backdrop {
+  opacity: 0;
+  scale: 1.05;
+  transition-duration: 0.2s;
+  transition-behavior: allow-discrete;
+}
+dialog[open],
+dialog[open]::backdrop {
+  opacity: 1;
+  scale: 1;
+
+  @starting-style {
+    opacity: 0;
+    scale: 1.05;
+  }
+}
+
+p {
+  display: block;
+  color: #727272;
+  font-size: 16px;
+  width: 250px;
+  height: 250px;
+
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}

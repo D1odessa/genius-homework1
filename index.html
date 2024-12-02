@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet"> -->
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
   <!-- <link href="./css/style.css" rel="stylesheet" type="text/css"> -->
 </head>
 
@@ -21,14 +21,17 @@
       <div class="header-container">
         <nav class="header-nav">
           <!-- logo + menu -->
+
           <a href="./index.html">
             <img src="./img/logo.svg" alt="logo"></a>
+
           <ul class="header-menu">
             <li><a class="link" href="#tradition-section">Наші традиції</a></li>
             <li><a class="link" href="#cookers-section">Шеф-кухарі</a></li>
             <li><a class="link" href="#formats-section">Формати</a></li>
             <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
+
         </nav>
         <!-- button -->
         <button type="button" class="button-call modal-btn-open">Замовити дзвінок</button>
@@ -42,7 +45,8 @@
     <section class="main-title">
       <h1><span class="accent">Сучасна</span> пекарня</h1>
     </section>
-    <!-- -------------------------- -->
+
+    <!-- -------- Секция Преимущества ------------------ -->
     <section class="advantages">
       <div class="container">
 
@@ -55,7 +59,8 @@
 
       </div>
     </section>
-    <!-- -------------- -->
+
+    <!-- -------  Секция Традиции ------- -->
     <section class="page-section" id="tradition-section">
       <div class="container">
 
@@ -79,7 +84,8 @@
       </div>
     </section>
 
-    <!-- --------------------------------- -->
+    <!-- -------------  Секция с Фото Шефов -------------------- -->
+
     <section class="page-section" id="cookers-section">
       <div class="container">
 
@@ -121,7 +127,7 @@
       </div>
     </section>
 
-    <!-- --------------------------------- -->
+    <!-- ------------  СЕКЦИЯ ФОРМАТЫ - СЛАЙдер  --------------------- -->
     <section class="page-section" id="formats-section">
       <div class="container">
 
@@ -138,7 +144,7 @@
           <ul class="container-formats-list">
 
             <li class="formats-list">
-              <article class="formats-item">
+              <article class="formats-item image1">
                 <h3 class="formats-item-title" lang="en">Walrus</h3>
                 <div class="formats-item-text">
                   <p>Площа: до 120 м2 </p>
@@ -150,8 +156,8 @@
             </li>
 
             <li class="formats-list">
-              <article class="formats-item">
-                <h3 class="format-title">Horseshoe</h3>
+              <article class="formats-item image2">
+                <h3 class="formats-item-title">Horseshoe</h3>
                 <div class="formats-item-text">
                   <p>Площа: до 25 м2 </p>
                   <p>Меню: найпопулярніші позиції меню</p>
@@ -162,8 +168,8 @@
             </li>
 
             <li class="formats-list">
-              <article class="formats-item">
-                <h3 class="format-title">Handlebar</h3>
+              <article class="formats-item image3">
+                <h3 class="formats-item-title">Handlebar</h3>
                 <div class="formats-item-text">
                   <p>Площа: до 15 м2 </p>
                   <p>Меню: найпопулярніші позиції меню</p>
@@ -185,7 +191,7 @@
       </div>
     </section>
 
-    <!-- ------------------------------------ -->
+    <!-- ---------------  Callback Form +  MAP   --------------------- -->
     <section class="page-section" id="contacts-section">
       <div class="container">
 
@@ -278,6 +284,9 @@
   </table> -->
 
 
+
+  <!-- -------------------  FOOTER -------------- -->
+
   <footer class="footer">
 
     <div class="container">
@@ -343,20 +352,21 @@
 
       <button class="modal-btn-close" type="button">X</button>
 
-      <form name="modal-callback-form" autocomplete="on" novalidate>
+      <form name="modal-callback-form" autocomplete="on" validate>
 
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст звʼяжеться з Вами!</p>
 
         <div class="form-field">
 
-          <input class="input-field" type="text" name="user-name" id="user-name" placeholder="Ім'я" />
+          <input class="input-field" type="text" name="user-name" id="user-name" placeholder="Ім'я" required
+            maxlength="32" />
           <label class="form-label visually-hidden" for="user-name">Ім'я</label>
         </div>
 
         <div class="form-field">
 
-          <input class="input-field" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" />
+          <input class="input-field" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required />
           <label class="form-label visually-hidden" for="user-tel">Телефон</label>
         </div>
 

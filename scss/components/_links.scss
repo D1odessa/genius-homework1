@@ -1,0 +1,16 @@
+.link {
+  color: var(--primery-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.link:hover {
+  color: var(--brand-color);
+  /* font-weight: 600; */
+}
+.social-links {
+  fill: var(--primery-light);
+}
+
+.social-links:hover {
+  fill: var(--brand-color);
+}

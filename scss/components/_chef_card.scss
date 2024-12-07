@@ -1,0 +1,23 @@
+.chef-card {
+  display: flex;
+  gap: 32px;
+  padding: 0 32px 0 0;
+  max-height: 25rem;
+
+  &__photo {
+    /* border: 1px solid var(--primery-dark); */
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--primery-light),
+      -16px 16px 0 2px var(--secondary-backgrd-color);
+  }
+
+  &__name {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__about-text p {
+    margin-bottom: 16px;
+  }
+}

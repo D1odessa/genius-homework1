@@ -1,0 +1,28 @@
+.mobile-menu {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primery-light);
+
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn-close {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--brand-color-dark);
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    fill: var(--brand-color-dark);
+  }
+}

@@ -3,26 +3,31 @@
 
 @import "./base";
 
-@import "./utils/utils";
 @import "./utils/slider";
+@import "./utils/texts";
+@import "./utils/utils";
 
-@import "./components/containers";
+// -------------------------------
 
-@import "./components/header";
+@import "./layouts/containers";
 
-@import "./components/buttons";
-@import "./components/links";
+@import "./layouts/header";
 
-@import "./components/section-advantages";
-@import "./components/section-traditions";
-@import "./components/section-chefs";
-@import "./components/section-4-formats";
+@import "./layouts/section-advantages";
+@import "./layouts/section-chefs";
+@import "./layouts/section-formats";
+@import "./layouts/section-traditions";
+@import "./layouts/section-5-callback-map";
 
-@import "./components/section-5-callback-map";
+@import "./layouts/footer";
 
 // -----------------------------------------
 
-@import "./components/footer";
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/chef_card";
+@import "./components/formats-card";
 
+@import "./components/mobile-menu";
 @import "./components/modal-window";
 @import "./components/modal-callback-form";

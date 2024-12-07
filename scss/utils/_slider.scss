@@ -2,31 +2,31 @@
   display: flex;
   gap: 32px;
   align-items: center;
-}
 
-.slider-button {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--primery-dark);
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  flex-shrink: 0;
+  &__button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--primery-dark);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
 
-  fill: var(--primery-dark);
-}
+    fill: var(--primery-dark);
+  }
 
-.slider-button.next {
-  transform: rotate(180deg);
-}
+  &__button--next {
+    transform: rotate(180deg);
+  }
 
-.slider-button:hover {
-  background-color: var(--primery-dark);
-  fill: var(--primery-light);
+  &__button:hover {
+    background-color: var(--primery-dark);
+    fill: var(--primery-light);
+  }
 }
 
 /* .slider-arrow {

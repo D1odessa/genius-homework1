@@ -1,0 +1,16 @@
+.section-formats__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.section-formats__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // /* flex-basis: calc((100% - 80px) / 2); */
+}
+.section-formats__item {
+  flex-basis: calc((100% - 40px) / 3);
+  /* flex-basis: 380px; */
+}
